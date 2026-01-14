@@ -16,13 +16,12 @@ public class Rectangle extends Figure {
     }
 
     @Override
-    public String getName() {
-        return "rectangle";
-    }
-
-    @Override
     public void print() {
-        super.print();
-        System.out.println("firstSide: " + firstSide + ", secondSide: " + secondSide);
+        System.out.println(
+                "Figure: circle, "
+                        + "area: " + getArea() + " sq. units, "
+                        + "firstSide: " + firstSide + " units, "
+                        + "secondSide: " + secondSide + " units, "
+                        + "color: " + getColor().name());
     }
 }

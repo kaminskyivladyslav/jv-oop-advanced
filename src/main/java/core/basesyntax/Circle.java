@@ -14,13 +14,11 @@ public class Circle extends Figure {
     }
 
     @Override
-    public String getName() {
-        return "circle";
-    }
-
-    @Override
     public void print() {
-        super.print();
-        System.out.println("radius: " + radius);
+        System.out.println(
+                "Figure: circle, "
+                        + "area: " + getArea() + " sq. units, "
+                        + "radius: " + radius + " units, "
+                        + "color: " + getColor().name());
     }
 }

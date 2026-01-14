@@ -16,13 +16,14 @@ public class RightTriangle extends Figure {
     }
 
     @Override
-    public String getName() {
-        return "right triangle";
-    }
-
-    @Override
     public void print() {
-        super.print();
-        System.out.println("firstLeg: " + firstLeg + ", secondLeg: " + secondLeg);
+        System.out.println(
+                "Figure: Right Triangle, "
+                        + "area: " + getArea() + " sq. units, "
+                        + "firstLeg: " + firstLeg + " units, "
+                        + "secondLeg: " + secondLeg + " units, "
+                        + "color: " + getColor().name());
+
+
     }
 }

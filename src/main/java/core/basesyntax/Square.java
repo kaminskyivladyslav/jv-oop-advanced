@@ -14,13 +14,11 @@ public class Square extends Figure {
     }
 
     @Override
-    public String getName() {
-        return "square";
-    }
-
-    @Override
     public void print() {
-        super.print();
-        System.out.println("squareSide" + squareSide);
+        System.out.println(
+                "Figure: circle, "
+                        + "area: " + getArea() + " sq. units, "
+                        + "squareSide: " + squareSide + " units, "
+                        + "color: " + getColor().name());
     }
 }
