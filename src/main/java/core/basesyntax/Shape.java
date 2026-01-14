@@ -1,5 +1,5 @@
 package core.basesyntax;
 
-public interface FiguresWillDo {
+public interface Shape {
     double getArea();
 }

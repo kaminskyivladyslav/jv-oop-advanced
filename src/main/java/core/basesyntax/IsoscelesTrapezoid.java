@@ -21,4 +21,10 @@ public class IsoscelesTrapezoid extends Figure {
     public String getName() {
         return "isosceles trapezoid";
     }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("side: " + side + ", side2: " + side2 + ", side3: " + side3);
+    }
 }

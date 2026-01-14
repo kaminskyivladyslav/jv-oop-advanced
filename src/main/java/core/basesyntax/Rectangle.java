@@ -1,8 +1,8 @@
 package core.basesyntax;
 
 public class Rectangle extends Figure {
-    private double firstSide;
-    private double secondSide;
+    private final double firstSide;
+    private final double secondSide;
 
     public Rectangle(double firstSide, double secondSide, Colors color) {
         this.firstSide = firstSide;
@@ -18,5 +18,11 @@ public class Rectangle extends Figure {
     @Override
     public String getName() {
         return "rectangle";
+    }
+
+    @Override
+    public void print() {
+        super.print();
+        System.out.println("firstSide: " + firstSide + ", secondSide: " + secondSide);
     }
 }
